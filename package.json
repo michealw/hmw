@@ -1,0 +1,19 @@
+{
+  "name": "hmw",
+  "version": "1.0.0",
+  "description": "CLI tool to compare weight values to cargo airliner capacities.",
+  "main": "bin/hmw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michealw/hmw.git"
+  },
+  "author": "Micheal Wass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michealw/hmw/issues"
+  },
+  "homepage": "https://github.com/michealw/hmw#readme"
+}
