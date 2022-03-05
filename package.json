@@ -4,7 +4,8 @@
   "description": "CLI tool to compare weight values to cargo airliner capacities.",
   "main": "bin/hmw.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/michealw/hmw/issues"
   },
-  "homepage": "https://github.com/michealw/hmw#readme"
+  "homepage": "https://github.com/michealw/hmw#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^9.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0"
+  }
 }
