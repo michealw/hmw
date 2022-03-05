@@ -5,7 +5,12 @@
   "main": "bin/hmw.js",
   "scripts": {
     "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "clean": "tsc --build --clean",
+    "package": "pkg .",
+    "start": "node bin/hmw.js"
+  },
+  "bin": {
+    "hmw": "./bin/hmw.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +23,20 @@
   },
   "homepage": "https://github.com/michealw/hmw#readme",
   "dependencies": {
-    "chalk": "^5.0.0",
-    "commander": "^9.0.0"
+    "chalk": "^4.1.2",
+    "cli-table": "^0.3.11",
+    "commander": "^9.0.0",
+    "unitmath": "^0.8.8"
   },
   "devDependencies": {
+    "@types/cli-table": "^0.3.0",
+    "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
     "eslint": "^8.10.0"
+  },
+  "pkg": {
+    "scripts": "bin/**/*.js",
+    "outputPath": "dist"
   }
 }

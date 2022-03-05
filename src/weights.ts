@@ -1,0 +1,25 @@
+const weightValues = new Map();
+weightValues.set('Airbus A400M Atlas', [81600, 310852]);
+weightValues.set('Airbus A300-600F', [106468, 375888]);
+weightValues.set('Airbus A330-200F', [151200, 513677]);
+weightValues.set('Airbus A380', [185000, 1267658]);
+weightValues.set('Airbus Beluga', [103617, 341717]);
+weightValues.set('Airbus Beluga XL', [111333, 500449]);
+weightValues.set('Antonov An-124 Ruslan', [330693, 886258]);
+weightValues.set('Antonov An-225 Mriya', [559580, 1410958]);
+weightValues.set('Boeing C-17A Globemaster III', [170900, 585000]);
+weightValues.set('Boeing 737-800(BCF)', [52800, 174000]);
+weightValues.set('Boeing 747-400F', [274100, 875000]);
+weightValues.set('Boeing 747-400ERF', [273400, 910000]);
+weightValues.set('Boeing 747-400LCF Dreamlifter', [250000, 803001]);
+weightValues.set('Boeing 747-8F', [292400, 987000]);
+weightValues.set('Boeing 757-200F', [84420, 255000]);
+weightValues.set('Boeing 767-300F', [96560, 412000]);
+weightValues.set('Boeing 777F', [226000, 766800]);
+weightValues.set('Lockheed C-5M Super Galaxy', [281000, 840000]);
+weightValues.set('Lockheed C-130H Hercules', [42000, 155000]);
+weightValues.set('Lockheed Martin C-130J Super Hercules', [44000, 155000]);
+weightValues.set('McDonnell Douglas DC-10-30F', [180000, 580000]);
+weightValues.set('McDonnell Douglas MD-11F', [202733, 602500]);
+
+export default weightValues;
