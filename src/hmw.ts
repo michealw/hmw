@@ -5,7 +5,21 @@ import ow from './output';
 program
     .name('hmw')
     .description('CLI tool to compare weight values to cargo airliner capacities')
-    .version('1.0.0');
+    .version('hmw 1.1.0\r\n(C) 2022 Micheal R. Wass');
+
+program.command('gal')
+    .description('Convert gallon value')
+    .argument('<number>', 'value to convert')
+    .option('--mtow', 'use maximum takeoff weight instead of payload value')
+    .action((val, options) => {
+        const calc = val * 8.3454;
+        
+        if (options.mtow) {
+            ow(calc, true);
+        } else {
+            ow(calc, false);
+        }
+    });
 
 program.command('kg')
     .description('Convert kilogram value')
@@ -30,6 +44,20 @@ program.command('lb')
             ow(val, true);
         } else {
             ow(val, false);
+        }
+    });
+
+program.command('oz')
+    .description('Convert ounce value')
+    .argument('<number>', 'value to convert')
+    .option('--mtow', 'use maximum takeoff weight instead of payload value')
+    .action((val, options) => {
+        const calc = val / 16;
+        
+        if (options.mtow) {
+            ow(calc, true);
+        } else {
+            ow(calc, false);
         }
     });
 
