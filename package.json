@@ -1,6 +1,6 @@
 {
   "name": "hmw",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "CLI tool to compare weight values to cargo airliner capacities.",
   "main": "bin/hmw.js",
   "scripts": {
