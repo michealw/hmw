@@ -5,7 +5,7 @@ import ow from './output';
 program
     .name('hmw')
     .description('CLI tool to compare weight values to cargo airliner capacities')
-    .version('hmw 1.1.0\r\n(C) 2022 Micheal R. Wass');
+    .version('hmw\r\n(C) 2022 Micheal R. Wass');
 
 program.command('gal')
     .description('Convert gallon value')
